@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "video-transcriber"
+version = "0.1.0"
+description = "Video Transcriber"
+authors = ["Rajan Mehta <rajan.mehta911@gmail.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+cython = "^3.2.4"
+pyannote-audio = "3.3.2"
+pydub = "^0.25.1"
+nemo-toolkit = {extras = ["asr"], version = "^2.6.1"}
+torch = "2.5.1"
+torchaudio = "2.5.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
