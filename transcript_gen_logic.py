@@ -39,9 +39,9 @@ smooth speaker assignment:
 import json
 
 def load_data():
-    with open("transcription.json", "r") as f:
+    with open("./artifacts/transcription.json", "r") as f:
         transcription = json.load(f)
-    with open("diarization.json", "r") as f:
+    with open("./artifacts/diarization.json", "r") as f:
         diarization = json.load(f)
     return transcription, diarization
 
